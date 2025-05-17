@@ -39,9 +39,10 @@ fetch(`${host}/characters`, {
      
     lista().then(() => {
         console.log(info)
-    });
+    }).catch((error)=>{
+        console.log.apply(error)
+    })
 
-     //acho q é isso, não tenho ctz
 
 }).catch((error)=>{
     console.log.apply(error)
